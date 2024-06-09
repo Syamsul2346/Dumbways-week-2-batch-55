@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/artikel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav style="background-color: blanchedalmond; height: 80px;">
+        <div style="display:flex; align-items: center; height: 100%; margin-left: 30px; margin-right: 30px;">
+            <ul style="display:flex; list-style-type: none; gap: 45px; align-items: center;">
+                <li>
+                    <a href="index.html"><img style="width: 120px" src="assets/images/logo tanaman.png"></a>
+                </li>
+                <li class="tb-navbar nav-collapse">
+                    <a href="index.html">Beranda</a>
+                </li>
+                <li class="tb-navbar nav-collapse">
+                    <a href="artikel.html">Artikel</a>
+                </li>
+                <li class="tb-navbar nav-collapse">
+                    <a href="artikel-detail.html">Artikel Detail</a>
+                </li>
+                <li class="tb-navbar nav-collapse">
+                    <a href="testimonial.html">Testimoni</a>
+                </li>
+            </ul>
+
+            <div style="display: flex; width: 100%; justify-content: end;">
+                <a href="contactme.html" class="contact-navbar nav-collapse">Hubungi kami</a>
+                <i class="fa-solid fa-bars" style="cursor: pointer;" id="humberger-button" onclick="openHumberger()"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="humberger-nav-container" id="humberger-nav-container">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="contactme.html">Hubungi Kami</a>
+        <a href="testimonial.html">Ulasan</a>
+    </div>
+
+    <div class="artikel">
+        <div class="artikel-form">
+            <div class="artikel-container">
+                <form onsubmit="submitArtikel(event)">
+                    <h1>AYO POSTING ARTIKEL MU!!</h1>
+                    <div>
+                        <label for="Judul">Judul Artikel</label>
+                        <input type="text" id="inputJudul">
+                    </div>
+                    <div>
+                        <label for="Konten">Konten Artikel</label>
+                        <textarea id="inputKonten"></textarea>
+                    </div>
+                    <div>
+                        <label for="Gambar">Unggah Gambar</label>
+                        <input type="file" id="inputGambar">
+                    </div>
+                    <div>
+                        <label for="Kategori">Kategori Artikel</label>
+                        <div>
+                            <input type="checkbox" id="pendidikan" name="kategori" value="Pendidikan">
+                            <label for="pendidikan">Pendidikan</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="pertanian" name="kategori" value="Pertanian">
+                            <label for="pertanian">Pertanian</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="teknologi" name="kategori" value="Teknologi">
+                            <label for="teknologi">Teknologi</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="fnb" name="kategori" value="F&B">
+                            <label for="fnb">F&B</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ekonomi" name="kategori" value="Ekonomi">
+                            <label for="ekonomi">Ekonomi</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="seni" name="kategori" value="Seni">
+                            <label for="seni">Seni</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sains" name="kategori" value="Sains">
+                            <label for="sains">Sains</label>
+                        </div>
+                    </div>
+                    <div class="button-input">
+                        <button>Unggah Artikel</button>
+                    </div>
+                </form>                 
+            </div>
+        </div>
+        <div>
+            <hr class="line">
+            <div id="konten" class="list-artikel"></div>
+        </div>
+    </div>
+    <script src="assets/js/artikel.js"></script> 
+    <script src="assets/js/nav.js"></script>
+</body>
+</html>

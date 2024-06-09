@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tb-navbar {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tb-navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.tb-navbar a:hover {
+    color: crimson;
+}
+
+.contact-navbar {
+    background-color: green;
+    color: aliceblue;
+    padding: 10px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* Responsive Navbar */
+#humberger-button {
+    display: none;
+}
+
+.humberger-nav-container {
+    display: none;
+}
+
+.humberger-nav-container a {
+    color: black;
+    border: 2px solid white;
+    background-color: rgb(217, 217, 217);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.humberger-nav-container .active {
+    background-color: green;
+}
+
+@media only screen and (max-width: 500px) {
+    #humberger-button {
+        display: block;
+    }
+
+    .nav-collapse {
+        display: none;
+    }
+
+    .humberger-nav-container {
+        font-size: 23px;
+        display: none;
+        flex-direction: column;
+    }
+}
+
+H1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+/* fitur agar bagian biodata dan gamabr icon memiliki responsive juga tergadap layar hp */
+.main-div {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: navajowhite;
+}
+
+.centered-image {
+    width: 35%;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 501px) {
+    .main-div {
+        width: 600px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex-container a {
+        margin-bottom: 10px;
+    }
+}
